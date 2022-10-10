@@ -3,7 +3,7 @@ React was used as a frontend in this task. Simple UI; using using react-bootsrap
     email: user@mail.com    
     password :1234
 
-Some Snapshots:
+Some Snapshots :
 
 ![Screenshot (370)](https://user-images.githubusercontent.com/69592870/194774659-d0894c06-63fa-4868-9e2e-4c5c6b00c36e.png)
 ---
