@@ -1,0 +1,7 @@
+.colouredbg{
+    background-color :rgb(13, 120, 124)
+}
+.nav-pills .nav-link.active { background-color: rgb(13, 120, 124); }
+.nav-link {
+    color: rgb(3, 29, 31);
+}
