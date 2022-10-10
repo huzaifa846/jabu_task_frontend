@@ -8,7 +8,6 @@ const TaskCard = (props) =>  {
 
     const handleClick = async () =>  {
       let newTask = await props.handleMarkComplete(task.id)
-      console.log(newTask);
       setTask(newTask)
     }
 

@@ -40,7 +40,6 @@ class CreateTask extends React.Component {
     
        getApiToken = async () => {
         let token = await reactLocalStorage.get('api_token')
-        console.log(token);
         this.setApiToken(token)
       }
       setApiToken(api_token){
@@ -52,8 +51,6 @@ class CreateTask extends React.Component {
      handleSubmit = async (e) =>{
 
         e.preventDefault();
-        console.log(this.state.startDate);
-        console.log(this.state.endDate);
         const data = {
             title: this.state.title,
             description: this.state.description,
@@ -65,12 +62,10 @@ class CreateTask extends React.Component {
             cycles: this.state.cycles,
             api_token : this.state.token
         }
-        console.log(data);
         const response = await axios.post(
             'http://127.0.0.1:8000/api/create/task/',
            data
           )
-          console.log(response.data);
       }
     onChangeType(event) {
         var val = event.target.value;
@@ -91,7 +86,6 @@ class CreateTask extends React.Component {
             }
         }
         this.setState({});
-        console.log(this.state.cycles);
 
     }
     handleTitle(event) {

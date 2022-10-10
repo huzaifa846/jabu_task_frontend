@@ -28,11 +28,8 @@ class Home extends React.Component {
   }
 
   getTasks = async () => {
-    console.log('asdfasdf');
     await this.getApiToken()
     let res = await axios.get(utils.BaseUrl + '?api_token=' + this.state.apiToken, utils.httpHeaders)
-    console.log('res.data');
-    console.log(res.data);
     this.state.tasks = res.data
 
     this.setState({})
